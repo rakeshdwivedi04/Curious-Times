@@ -1,0 +1,119 @@
+
+
+.skdslider{
+ width:100%;
+ position: relative;
+ display: block;
+ overflow:hidden; height:501px;
+}
+
+.skdslider:after {
+    content: '';
+    padding-top: 50%; 
+    display: block;
+}
+
+.skdslider ul.slides{margin:0; padding:0; list-style-type:none;}
+.skdslider ul.slides li
+{
+   display: block;
+}
+.skdslider ul.slides li img{
+    width: 100%;
+	height:100%;
+	border:0;
+}
+.skdslider a.prev{
+    background: url("../images/left.png") no-repeat scroll 0 0 transparent;
+	width:34px;
+	height:70px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:0%;
+	margin-top:-35px; 
+}
+
+.skdslider a.next{
+    background: url("../images/right.png") no-repeat scroll 0 0 transparent;
+	width:34px;
+	height:70px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	right:0%;
+	margin-top:-35px;
+}
+
+.skdslider a.prev:hover{
+    
+	
+}
+
+.skdslider a.next:hover{
+   
+	
+}
+
+
+
+
+.skdslider .slide-desc {    
+    left: 13%;
+    padding: 27px 15px;
+    position: absolute;
+    top: 32%;
+    max-width: 55%;
+	display:inline-block; text-align:center;
+}
+.skdslider .slide-desc > h2 {
+    color: #f90b2d; border-bottom:1px dotted #f90b2d; padding:0 0px 20px; text-align:center; margin:0 50px 3px;
+   
+    font-size: 32px;
+    font-family: 'Comic Sans MS';
+    
+   
+}
+.skdslider .slide-desc > h2 a {
+    color: #fff;}
+	.skdslider .slide-desc > h2 a:hover {
+    color: #fff; text-decoration:underline;}
+.skdslider .slide-desc > p {
+    color: #006996;   
+    font-size: 24px;
+    line-height: 18px; text-align:center;font-family: 'Corbel'; font-weight:normal; float:left; padding-bottom:40px;
+   
+}
+.skdslider .slide-desc > p span{ font-size: 36px; line-height:50px;font-family: 'Articulate'; font-weight:800; text-transform:uppercase;}
+.skdslider .slide-desc  a.download {
+    color:#fff;
+	font-size:22px;
+	padding:10px 35px; background:#f90b2d; font-family: 'Corbel';font-weight: bold;
+}
+.skdslider .slide-desc  a.download:hover {
+background:#000; 
+}
+
+/**************************Add below this line****************************************************************************/
+	
+@media only screen and (max-width:768px){
+	
+	.skdslider{
+ height:auto;
+}
+
+
+.skdslider a.prev{  
+	width:57px;
+	height:55px;	
+	margin-top:-28px;
+	background-size:50%; 
+}
+
+.skdslider a.next{	
+	height:55px; width:57px;	
+	margin-top:-28px;
+	background-size:50%;right:0;
+}
